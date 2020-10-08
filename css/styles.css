@@ -64,7 +64,7 @@ body {
     .gallery {
         padding: 20px;
         float: left;
-        width: 33.33%;
+        width: 100%;
     }
     .gallery img {
         width: 100%;
