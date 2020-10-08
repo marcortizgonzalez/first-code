@@ -1,20 +1,32 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Crimson Text', serif;
-  font-size: 20px
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
+
 /* Style the header */
+
 .header {
-  background-color: #ffd000;
-  padding: 20px;
-  text-align: center;
-  height: 50vh;
+    background-color: #0066ff;
+    padding: 20px;
+    text-align: center;
 }
+
+.header h1 {
+    font-size: 60px;
+    color: #000000
+}
+
+.header p {
+    font-size: 40px;
+    color: #818181
+}
+
 
 /* Create three equal columns that floats next to each other */
 
@@ -22,21 +34,43 @@ body {
 /* Ejemplos de estilos por clase */
 
 .column {
-  float: left;
-  width: 100%;
-  padding: 20px 20% 0 20%;
+    float: left;
+    width: 100%;
+    padding: 20px 20% 0 20%;
 }
+
 
 /* Clear floats after the columns */
+
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
+.column h2 {
+    color: rgb(62, 70, 62);
+    text-align: center;
+}
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
+    .column {
+        width: 100%;
+    }
+    /*Image Gallery*/
+    .gallery {
+        padding: 20px;
+        float: left;
+        width: 33.33%;
+    }
+    .gallery img {
+        width: 100%;
+    }
+    .gallery .desc {
+        padding: 15px;
+        text-align: center;
+    }
 }
