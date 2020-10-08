@@ -63,7 +63,7 @@ body {
     /*Image Gallery*/
     .gallery {
         padding: 20px;
-        float: left;
+        float: center;
         width: 100%;
     }
     .gallery img {
