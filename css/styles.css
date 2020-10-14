@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Crimson Text', serif;
-    font-size: 20px
 }
 
 body {
@@ -12,8 +11,9 @@ body {
 /* Style the header */
 
 .header {
-    background-color: #0066ff;
-    padding: 20px;
+    background-image: url('../img/pexels-lukas-1420701.jpg');
+    background-size: cover;
+    padding: 10% 20px;
     text-align: center;
 }
 
@@ -24,7 +24,7 @@ body {
 
 .header p {
     font-size: 40px;
-    color: #818181
+    color: #bbbbbb
 }
 
 
@@ -33,10 +33,20 @@ body {
 
 /* Ejemplos de estilos por clase */
 
-.column {
+.one-column {
     float: left;
     width: 100%;
     padding: 20px 20% 0 20%;
+}
+
+.one-column h1,
+.one-column h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.cadetblue {
+    background-color: cadetblue;
 }
 
 
@@ -48,8 +58,21 @@ body {
     clear: both;
 }
 
-.column h2 {
-    color: rgb(62, 70, 62);
+
+/*Three columns gallery*/
+
+.three-column {
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.three-column img {
+    width: 100%;
+}
+
+.three-column .desc {
+    padding: 10px;
     text-align: center;
 }
 
@@ -59,18 +82,5 @@ body {
 @media screen and (max-width:600px) {
     .column {
         width: 100%;
-    }
-    /*Image Gallery*/
-    .gallery {
-        padding: 20px;
-        float: center;
-        width: 100%;
-    }
-    .gallery img {
-        width: 100%;
-    }
-    .gallery .desc {
-        padding: 15px;
-        text-align: center;
     }
 }
