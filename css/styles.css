@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Kalam', cursive;
 }
 
 body {
@@ -116,7 +116,9 @@ body {
 /* Responsive layout */
 
 @media screen and (max-width:600px) {
-    .column {
+    .two-column,
+    .three-column,
+    .four-column {
         width: 100%;
     }
 }
